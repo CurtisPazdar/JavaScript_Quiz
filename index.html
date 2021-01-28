@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link bootstrap and our internal css style sheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,31 +16,34 @@
     <title> JavaScript Quiz </title>
 </head>
 <body>
-        <div class="container">
+    <!-- creating the container to better organize html using bootstrap grid. -->
+        <article class="container">
+            <!-- create the first row of the grid -->
             <div class="row">
-              <div class="col-12">
+              <header class="col-12">
         <!-- create a button that will be clicked to start the quiz -->
                     <button type="button" class="btn btn-primary btn-lg btn-block" id="startButton" style="display:block;">Do you want to start JavaScript Quiz?</button>
                     <h1 id="header">
-                        
                     </h1>
                     
-                </div>
+                </header>
     
             </div>
+        <!-- create the second row of the grid -->
             <div class="row">
                 <div class="col-12">
-                    
-                <div id="quiz_box" style="display: none;" class="col-md-12">
+            <!-- Create the quiz area that is originally set to display none. This can be toggled with the JavaScript -->
+                <article id="quiz_box" style="display: none;" class="col-md-12">
 
+                    <!-- create area that will display the score  -->
                     <p id="scoreArea" class="col-12"></p>
-
+                    <!-- create and area to display time left  -->
                     <p id="timerArea" class="col-12"></p>
-                
+                    <!-- create and area to display the current question  -->
                     <p id="questionArea" class="col-12"></p>
 
-                    <div id="answers" class="col-12 col-sm-12 col-md-12 col-lg 12">
-
+                    <section id="answers" class="col-12 col-sm-12 col-md-12 col-lg 12">
+                    <!-- create the buttons that contain the multiple choice answers -->
                     <button type="button"  class="btn btn-light answer" id="button1" ></button>
                     <button type="button"  class="btn btn-light answer" id="button2" ></button>
                     <button type="button"  class="btn btn-light answer" id="button3" ></button>
@@ -47,13 +51,13 @@
 
                     <p id="displayMessage" class="col-6"></p>
 
-                    </div>
-                </div>
+                    </section>
+                </article>
               </div>
 
             </div>
-        </div>
-   
+        </article>
+   <!-- link necessary bootstrap javascript and our own internal js file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src = "script.js"></script>

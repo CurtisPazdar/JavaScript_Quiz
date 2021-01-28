@@ -1,7 +1,9 @@
+/* Change body background color */
 body {
   background-color: darkseagreen;
 }
 
+/* Change the start position to better center it. Change background color and border.  */
 #startButton {
   margin: auto 0;
   position: relative;
@@ -13,32 +15,39 @@ body {
   border-width: 4px;
 }
 
+/* Align header in the center of the page and center text */
 #header {
   text-align: center;
   margin: auto 0;
 }
 
+/* Align quiz box position. Move down 150px */
 #quiz_box {
   position: relative;
   top: 150px;
 }
 
+/* text align right the timer and increase the font size. Set background color.  */
 #timerArea {
   text-align: right;
   font-size: 32px;
   text-align: center;
+  background-color: floralwhite;
 }
 
+/* Set background color */
 #questionArea {
   background-color: floralwhite;
 }
 
+/* Set background color and font size */
 #scoreArea {
   background-color: floralwhite;
   text-align: center;
   font-size: 32px;
 }
 
+/* set properties for the buttons. Changing height, width, and padding */
 #button1,
 #button2,
 #button3,
